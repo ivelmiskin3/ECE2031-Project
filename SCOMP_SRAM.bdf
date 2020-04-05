@@ -909,18 +909,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1008 376)
-	(pt 1008 288)
-	(bus)
-)
-(connector
 	(pt 1072 472)
 	(pt 1080 472)
-	(bus)
-)
-(connector
-	(pt 800 376)
-	(pt 800 472)
 	(bus)
 )
 (connector
@@ -938,11 +928,6 @@ applicable agreement for further details.
 (connector
 	(pt 784 320)
 	(pt 784 488)
-)
-(connector
-	(pt 1008 376)
-	(pt 800 376)
-	(bus)
 )
 (connector
 	(text "io_write" (rect 322 408 358 420)(font "Arial" ))
@@ -974,11 +959,6 @@ applicable agreement for further details.
 	(pt 816 456)
 )
 (connector
-	(pt 800 472)
-	(pt 1024 472)
-	(bus)
-)
-(connector
 	(pt 784 488)
 	(pt 816 488)
 )
@@ -1001,11 +981,6 @@ applicable agreement for further details.
 (connector
 	(pt 672 536)
 	(pt 816 536)
-)
-(connector
-	(pt 672 472)
-	(pt 800 472)
-	(bus)
 )
 (connector
 	(pt 808 288)
@@ -1033,7 +1008,22 @@ applicable agreement for further details.
 	(pt 736 424)
 	(bus)
 )
-(junction (pt 800 472))
+(connector
+	(pt 1008 288)
+	(pt 1008 472)
+	(bus)
+)
+(connector
+	(pt 672 472)
+	(pt 1008 472)
+	(bus)
+)
+(connector
+	(pt 1008 472)
+	(pt 1024 472)
+	(bus)
+)
 (junction (pt 768 456))
 (junction (pt 784 488))
 (junction (pt 752 440))
+(junction (pt 1008 472))
