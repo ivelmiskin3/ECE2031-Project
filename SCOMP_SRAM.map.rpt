@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SCOMP_SRAM
-Tue Apr 14 21:36:55 2020
+Tue Apr 14 22:41:00 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -54,13 +54,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 14 21:36:55 2020        ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 14 22:40:59 2020        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; SCOMP_SRAM                                   ;
 ; Top-level Entity Name              ; SCOMP_SRAM                                   ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 1,543                                        ;
-;     Total combinational functions  ; 1,511                                        ;
+; Total logic elements               ; 1,547                                        ;
+;     Total combinational functions  ; 1,515                                        ;
 ;     Dedicated logic registers      ; 208                                          ;
 ; Total registers                    ; 208                                          ;
 ; Total pins                         ; 43                                           ;
@@ -175,7 +175,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altpll.tdf                       ; yes             ; Megafunction                           ; c:/altera/91sp2/quartus/libraries/megafunctions/altpll.tdf            ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf        ;
 ; db/altsyncram_hht3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Harry Kang/Desktop/ECE2031-Project/db/altsyncram_hht3.tdf    ;
-; SimpleSRAM.mif                   ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Harry Kang/Desktop/ECE2031-Project/SimpleSRAM.mif            ;
+; simplesram.mif                   ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Harry Kang/Desktop/ECE2031-Project/simplesram.mif            ;
 ; lpm_clshift.tdf                  ; yes             ; Megafunction                           ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_clshift.tdf       ;
 ; db/lpm_clshift_fuc.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Harry Kang/Desktop/ECE2031-Project/db/lpm_clshift_fuc.tdf    ;
 ; lpm_bustri.tdf                   ; yes             ; Megafunction                           ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_bustri.tdf        ;
@@ -187,16 +187,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+---------------------------------------------+
 ; Resource                                    ; Usage                                       ;
 +---------------------------------------------+---------------------------------------------+
-; Estimated Total logic elements              ; 1,543                                       ;
+; Estimated Total logic elements              ; 1,547                                       ;
 ;                                             ;                                             ;
-; Total combinational functions               ; 1511                                        ;
+; Total combinational functions               ; 1515                                        ;
 ; Logic element usage by number of LUT inputs ;                                             ;
-;     -- 4 input functions                    ; 706                                         ;
-;     -- 3 input functions                    ; 741                                         ;
-;     -- <=2 input functions                  ; 64                                          ;
+;     -- 4 input functions                    ; 716                                         ;
+;     -- 3 input functions                    ; 736                                         ;
+;     -- <=2 input functions                  ; 63                                          ;
 ;                                             ;                                             ;
 ; Logic elements by mode                      ;                                             ;
-;     -- normal mode                          ; 1468                                        ;
+;     -- normal mode                          ; 1472                                        ;
 ;     -- arithmetic mode                      ; 43                                          ;
 ;                                             ;                                             ;
 ; Total registers                             ; 208                                         ;
@@ -207,8 +207,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Total memory bits                           ; 32768                                       ;
 ; Total PLLs                                  ; 1                                           ;
 ; Maximum fan-out node                        ; altpll0:inst1|altpll:altpll_component|_clk0 ;
-; Maximum fan-out                             ; 231                                         ;
-; Total fan-out                               ; 6023                                        ;
+; Maximum fan-out                             ; 233                                         ;
+; Total fan-out                               ; 6046                                        ;
 ; Average fan-out                             ; 3.39                                        ;
 +---------------------------------------------+---------------------------------------------+
 
@@ -218,16 +218,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
-; |SCOMP_SRAM                               ; 1511 (32)         ; 208 (0)      ; 32768       ; 0            ; 0       ; 0         ; 43   ; 0            ; |SCOMP_SRAM                                                               ; work         ;
-;    |CHIP_EMULATOR:inst4|                  ; 932 (932)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|CHIP_EMULATOR:inst4                                           ; work         ;
-;    |IO_DECODER:inst3|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|IO_DECODER:inst3                                              ;              ;
-;    |SCOMP:inst|                           ; 496 (392)         ; 183 (183)    ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst                                                    ; work         ;
-;       |altsyncram:MEMORY|                 ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst|altsyncram:MEMORY                                  ;              ;
+; |SCOMP_SRAM                               ; 1515 (32)         ; 208 (0)      ; 32768       ; 0            ; 0       ; 0         ; 43   ; 0            ; |SCOMP_SRAM                                                               ; work         ;
+;    |CHIP_EMULATOR:inst4|                  ; 932 (932)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|CHIP_EMULATOR:inst4                                           ;              ;
+;    |IO_DECODER:inst3|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|IO_DECODER:inst3                                              ;              ;
+;    |SCOMP:inst|                           ; 496 (391)         ; 183 (183)    ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst                                                    ; work         ;
+;       |altsyncram:MEMORY|                 ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst|altsyncram:MEMORY                                  ; work         ;
 ;          |altsyncram_hht3:auto_generated| ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst|altsyncram:MEMORY|altsyncram_hht3:auto_generated   ; work         ;
 ;       |lpm_bustri:IO_BUS|                 ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst|lpm_bustri:IO_BUS                                  ;              ;
-;       |lpm_clshift:SHIFTER|               ; 89 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst|lpm_clshift:SHIFTER                                ;              ;
-;          |lpm_clshift_fuc:auto_generated| ; 89 (89)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_fuc:auto_generated ; work         ;
-;    |addressimplementation:inst7|          ; 48 (48)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|addressimplementation:inst7                                   ;              ;
+;       |lpm_clshift:SHIFTER|               ; 90 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst|lpm_clshift:SHIFTER                                ; work         ;
+;          |lpm_clshift_fuc:auto_generated| ; 90 (90)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_fuc:auto_generated ; work         ;
+;    |addressimplementation:inst7|          ; 51 (51)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|addressimplementation:inst7                                   ;              ;
 ;    |altpll0:inst1|                        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|altpll0:inst1                                                 ; work         ;
 ;       |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SCOMP_SRAM|altpll0:inst1|altpll:altpll_component                         ;              ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
@@ -447,7 +447,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 176   ;
+; Number of registers using Clock Enable       ; 175   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -457,12 +457,14 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |SCOMP_SRAM|addressimplementation:inst7|SRAM_ADDR_ALTERA_SYNTHESIZED[17] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SCOMP_SRAM|addressimplementation:inst7|SRAM_ADDR_ALTERA_SYNTHESIZED[14] ;
-; 3:1                ; 99 bits   ; 198 LEs       ; 99 LEs               ; 99 LEs                 ; Yes        ; |SCOMP_SRAM|SCOMP:inst|PC_STACK[7][3]                                    ;
-; 12:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_SRAM|SCOMP:inst|PC[7]                                             ;
-; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_SRAM|SCOMP:inst|AC[8]                                             ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |SCOMP_SRAM|addressimplementation:inst7|STATE                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |SCOMP_SRAM|addressimplementation:inst7|SRAM_ADDR_ALTERA_SYNTHESIZED[16] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SCOMP_SRAM|addressimplementation:inst7|SRAM_ADDR_ALTERA_SYNTHESIZED[11] ;
+; 3:1                ; 99 bits   ; 198 LEs       ; 99 LEs               ; 99 LEs                 ; Yes        ; |SCOMP_SRAM|SCOMP:inst|PC_STACK[7][7]                                    ;
+; 12:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_SRAM|SCOMP:inst|PC[3]                                             ;
+; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_SRAM|SCOMP:inst|AC[14]                                            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |SCOMP_SRAM|addressimplementation:inst7|STATE                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |SCOMP_SRAM|addressimplementation:inst7|STATE                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |SCOMP_SRAM|addressimplementation:inst7|Selector1                        ;
 ; 13:1               ; 16 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; No         ; |SCOMP_SRAM|SCOMP:inst|Add1                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
 
@@ -975,7 +977,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Apr 14 21:36:49 2020
+    Info: Processing started: Tue Apr 14 22:40:53 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SCOMP_SRAM -c SCOMP_SRAM
 Info: Found 2 design units, including 1 entities, in source file addressimplementation.vhd
     Info: Found design unit 1: addressimplementation-bdf_type
@@ -1125,17 +1127,6 @@ Info: Instantiated megafunction "SCOMP:inst|altsyncram:MEMORY" with the followin
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_hht3.tdf
     Info: Found entity 1: altsyncram_hht3
 Info: Elaborating entity "altsyncram_hht3" for hierarchy "SCOMP:inst|altsyncram:MEMORY|altsyncram_hht3:auto_generated"
-Warning: 323 out of 2048 addresses are reinitialized. The latest initialized data will replace the existing data. There are 323 warnings found, and 10 warnings are reported.
-    Warning: Memory Initialization File address 0 is reinitialized
-    Warning: Memory Initialization File address 1 is reinitialized
-    Warning: Memory Initialization File address 2 is reinitialized
-    Warning: Memory Initialization File address 3 is reinitialized
-    Warning: Memory Initialization File address 4 is reinitialized
-    Warning: Memory Initialization File address 5 is reinitialized
-    Warning: Memory Initialization File address 6 is reinitialized
-    Warning: Memory Initialization File address 7 is reinitialized
-    Warning: Memory Initialization File address 8 is reinitialized
-    Warning: Memory Initialization File address 9 is reinitialized
 Info: Elaborating entity "LPM_CLSHIFT" for hierarchy "SCOMP:inst|LPM_CLSHIFT:SHIFTER"
 Info: Elaborated megafunction instantiation "SCOMP:inst|LPM_CLSHIFT:SHIFTER"
 Info: Instantiated megafunction "SCOMP:inst|LPM_CLSHIFT:SHIFTER" with the following parameter:
@@ -2210,16 +2201,16 @@ Info: 8 registers lost all their fanouts during netlist optimizations. The first
     Info: Register "SCOMP:inst|INT_ACK[2]" lost all its fanouts during netlist optimizations.
     Info: Register "SCOMP:inst|INT_ACK[1]" lost all its fanouts during netlist optimizations.
     Info: Register "SCOMP:inst|INT_ACK[0]" lost all its fanouts during netlist optimizations.
-Info: Implemented 1607 device resources after synthesis - the final resource count might be different
+Info: Implemented 1609 device resources after synthesis - the final resource count might be different
     Info: Implemented 2 input pins
     Info: Implemented 41 output pins
-    Info: Implemented 1547 logic cells
+    Info: Implemented 1549 logic cells
     Info: Implemented 16 RAM segments
     Info: Implemented 1 PLLs
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 1057 warnings
-    Info: Peak virtual memory: 267 megabytes
-    Info: Processing ended: Tue Apr 14 21:36:55 2020
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:07
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 1046 warnings
+    Info: Peak virtual memory: 265 megabytes
+    Info: Processing ended: Tue Apr 14 22:41:00 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
 
 

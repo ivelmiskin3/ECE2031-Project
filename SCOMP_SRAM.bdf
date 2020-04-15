@@ -1032,14 +1032,19 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "clk_scomp" (rect 330 424 383 436)(font "Arial" ))
-	(pt 320 440)
-	(pt 408 440)
-)
-(connector
 	(text "reset_n_int" (rect 330 440 384 452)(font "Arial" ))
 	(pt 320 456)
 	(pt 408 456)
+)
+(connector
+	(text "clk_peripheral" (rect 506 80 573 92)(font "Arial" ))
+	(pt 496 96)
+	(pt 608 96)
+)
+(connector
+	(text "clk_peripheral" (rect 330 424 397 436)(font "Arial" ))
+	(pt 320 440)
+	(pt 408 440)
 )
 (junction (pt 1008 288))
 (junction (pt 752 520))

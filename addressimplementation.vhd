@@ -2,8 +2,6 @@ LIBRARY IEEE;
 LIBRARY WORK;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
-
-
 ENTITY addressimplementation IS
   PORT (
     CLOCK : IN STD_LOGIC;
@@ -43,7 +41,6 @@ BEGIN
   LOWER_ENABLE <= SET_LOWER AND IO_WRITE;
   WRITE_ENABLE <= (SRAM_DATA OR SRAM_INC_DATA) AND IO_WRITE;
   READ_ENABLE <= (SRAM_DATA OR SRAM_INC_DATA) AND (NOT IO_WRITE);
-
   PROCESS (ALL)
   BEGIN
     IF (RESETN = '0') THEN
@@ -55,30 +52,31 @@ BEGIN
       IF (UPPER_ENABLE = '1') THEN
         SRAM_ADDR_ALTERA_SYNTHESIZED(17 DOWNTO 16) <= IO_DATA(1 DOWNTO 0);
       END IF;
-      IF (READ_ENABLE = '1') THEN
-        STATE <= SRAM_READ0;
-      ELSIF (WRITE_ENABLE = '1') THEN
-        STATE <= SRAM_WRITE0;
-      END IF;
-
       CASE STATE IS
         WHEN IDLE =>
-          SRAM_WE_N <= '1';
-          SRAM_OE_N <= '1';
+          IF (READ_ENABLE = '1') THEN
+            SRAM_OE_N <= '0';
+            STATE <= SRAM_READ0;
+          ELSIF (WRITE_ENABLE = '1') THEN
+            SRAM_WE_N <= '0';
+            STATE <= SRAM_WRITE0;
+          END IF;
 
         WHEN SRAM_READ0 =>
-          SRAM_OE_N <= '0';
           IF (SRAM_INC_DATA = '1') THEN
+            SRAM_OE_N <= '1';
             STATE <= SRAM_READ1;
-          ELSE
+          ELSIF (SRAM_DATA = '0') THEN
+            SRAM_OE_N <= '1';
             STATE <= IDLE;
           END IF;
 
         WHEN SRAM_WRITE0 =>
-          SRAM_WE_N <= '0';
           IF (SRAM_INC_DATA = '1') THEN
+            SRAM_WE_N <= '1';
             STATE <= SRAM_WRITE1;
           ELSE
+            SRAM_WE_N <= '1';
             STATE <= IDLE;
           END IF;
 
