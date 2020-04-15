@@ -994,11 +994,6 @@ applicable agreement for further details.
 	(pt 344 952)
 )
 (connector
-	(text "clk_peripheral" (rect 506 80 573 92)(font "Arial" ))
-	(pt 496 96)
-	(pt 608 96)
-)
-(connector
 	(text "clk_scomp" (rect 330 424 383 436)(font "Arial" ))
 	(pt 320 440)
 	(pt 408 440)
